@@ -49,4 +49,5 @@ recouple:
 
 
 plots:
+	python plot.py
 	@echo Plots done.
