@@ -1,6 +1,6 @@
 # Decoupled Boilerplate
 
-Boilerplate example of a decoupled project. Effective likelihoods and template parametrizations are hosted on the web. In this case, they are hosted on this projects associated github page (in the git branch gh-pages).
+Boilerplate example of a decoupled project. Effective likelihoods and template parametrizations are hosted on the web. In this case, they are hosted on this projects associated github page.
 
 
 ### Decouple and Recouple
