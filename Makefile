@@ -5,7 +5,7 @@
 DECOUPLEPATH=~/physics/decouple/
 
 # Keep unchanged for this example
-REMOTEADDR=http://svenkreiss.github.io/decoupledBoilerplate/data/
+REMOTEADDR=http://svenkreiss.github.io/decoupledDemo/data/
 
 
 
@@ -14,6 +14,8 @@ all:
 	$(MAKE) recouple
 	$(MAKE) plots
 
+clean:
+	rm -rf decoupled recoupled plots
 
 
 decoupled/%:
