@@ -53,3 +53,7 @@ recouple:
 plots:
 	python plot.py
 	@echo Plots done.
+
+
+
+.PHONY: download recouple plots
