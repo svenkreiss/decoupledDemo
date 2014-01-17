@@ -123,7 +123,7 @@ def main():
 
 	draw_kVkF_frame( 
 		counting_kVkF, 
-		"plots/kVkF.eps", 
+		"plots/kVkF.png", 
 		opts={
 			'modelNominal': 'template10_etasgeneric10_learningFull',
 			'modelAlt': 'template10_etasgeneric10_learningFull_wideGauss1.3'
@@ -132,7 +132,7 @@ def main():
 	)
 	draw_kGlukGamma_frame( 
 		counting_kGlukGamma, 
-		"plots/kGlukGamma.eps", 
+		"plots/kGlukGamma.png", 
 		opts={
 			'modelNominal': 'template10_etasgeneric10_learningFull',
 			'modelAlt': 'template10_etasgeneric10_learningFull_wideGauss1.3'
