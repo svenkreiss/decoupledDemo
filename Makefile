@@ -1,10 +1,7 @@
 # 2 Jan 2014
 # Sven Kreiss, Kyle Cranmer
 
-# Adjust to your local installation of Decouple:
-DECOUPLEPATH=~/physics/decouple/
-
-# Keep unchanged for this example
+# Keep unchanged for this example (web address for data files)
 REMOTEADDR=http://svenkreiss.github.io/decoupledDemo/data/
 
 
@@ -16,6 +13,10 @@ all:
 
 clean:
 	rm -rf decoupled recoupled plots
+
+.PHONY: clean download recouple plots
+
+
 
 
 decoupled/%:
@@ -35,6 +36,10 @@ download: \
 
 
 
+
+
+
+
 COMBINPUT  = decoupled/2ph_effectiveLikelihood.root:profiledNLL:decoupled/2ph_templateParametrization.pickle:generic10_learningFull:2
 COMBINPUT += decoupled/4l_effectiveLikelihood.root:profiledNLL:decoupled/4l_templateParametrization.pickle:generic10_learningFull:2
 COMBINPUT += decoupled/lvlv_effectiveLikelihood.root:profiledNLL:decoupled/lvlv_templateParametrization.pickle:generic10_learningFull:2
@@ -43,9 +48,11 @@ OPTIONS_COMB = --skip_muTmuW --options_kVkF='--range=0.65,-1.7,1.5,2.0 --bins=20
 
 recouple:
 	mkdir -p recoupled
-	python $(DECOUPLEPATH)/Decouple/recouple.py -i "$(COMBINPUT)" -o recoupled/ $(OPTIONS_COMB) --template=10
-	python $(DECOUPLEPATH)/Decouple/recouple.py -i "$(COMBINPUT)" -o recoupled/ $(OPTIONS_COMB) --template=10 --wideGauss=1.3
+	recouple -i "$(COMBINPUT)" -o recoupled/ $(OPTIONS_COMB) --template=10
+	recouple -i "$(COMBINPUT)" -o recoupled/ $(OPTIONS_COMB) --template=10 --wideGauss=1.3
 	@echo Recouple done.
+
+
 
 
 
@@ -55,5 +62,3 @@ plots:
 	@echo Plots done.
 
 
-
-.PHONY: download recouple plots
