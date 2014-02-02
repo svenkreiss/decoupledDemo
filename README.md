@@ -2,7 +2,7 @@
 
 This demo repository shows a minimal example of how to use _recouple_ on a _decoupled_ model. Please refer to the documentation shown at the main [decouple repository](https://github.com/svenkreiss/decouple) and the paper [arXiv:1401.0080 \[hep-ph\]](http://arxiv.org/abs/1401.0080) for more information about `decouple` and `recouple`. 
 
-For this demo, effective likelihoods and template parametrizations are hosted on this project's [github page](http://svenkreiss.github.com/decoupledDemo). Create a `virtualenv` (which usually comes with your python environment or can be insalled), install the requirements and run `make`:
+For this demo, effective likelihoods and template parametrizations are hosted on this project's [github page](http://svenkreiss.github.com/decoupledDemo). You need to have a version of ROOT with PyROOT. Create a `virtualenv` (which usually comes with your python environment or can be insalled), install the requirements and run `make`:
 
 ```
 virtualenv venv
