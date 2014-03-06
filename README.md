@@ -35,3 +35,16 @@ export LD_LIBRARY_PATH="/afs/cern.ch/sw/lcg/external/Python/2.7.3/x86_64-slc6-gc
 ```
 
 Afterwards, continue with the instructions above.
+
+
+# Attribution
+
+Please cite `K. Cranmer, S. Kreiss, D. Lopez-Val and T. Plehn (2014) <http://arxiv.org/abs/1401.0080>` if you find this code useful in your research.
+
+
+# License
+
+Copyright 2013-2014 Sven Kreiss, Kyle Cranmer
+
+`decoupledDemo` is free software made available under the MIT License. For details see
+the [LICENSE](LICENSE) file.
